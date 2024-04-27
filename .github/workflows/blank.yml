@@ -18,4 +18,12 @@ jobs:
         run: |
           terraform init
 
-          
+
+      - name: Configur workspace
+        run: |
+            terraform workspace new dev || terraform workspace select dev
+
+  
+      - name: Plan
+        run: |
+                terraform plan          
