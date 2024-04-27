@@ -23,21 +23,21 @@ jobs:
       - name: Configur workspace
         working-directory: asg
         run: |
-                terraform workspace new dev || terraform workspace select dev
+          terraform workspace new dev || terraform workspace select dev
 
   
       - name: Plan
         working-directory: asg
         run: |
-                terraform plan   
+          terraform plan   
           
       - name: Plan
         working-directory: asg
         run: |
-                terraform plan   
+          terraform plan   
 
       - name: Apply
         working-directory: asg
         run: |
-         terraform plan   
+          terraform plan   
                         

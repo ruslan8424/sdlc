@@ -23,22 +23,22 @@ jobs:
       - name: Configur workspace
         working-directory: rds
         run: |
-                terraform workspace new dev || terraform workspace select dev
+          terraform workspace new dev || terraform workspace select dev
 
   
       - name: Plan
         working-directory: rds
         run: |
-                terraform plan   
+          terraform plan   
           
       - name: Plan
         working-directory: rds
         run: |
-                terraform plan   
+          terraform plan   
 
       - name: Apply
         working-directory: rds
         run: |
-         echo "applying"   
+          echo "applying"   
          #terraform apply -auto-approve
                         
