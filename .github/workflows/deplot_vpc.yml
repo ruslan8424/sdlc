@@ -4,7 +4,7 @@ name: deploy vpc
 on:
   push:
     branches: [ "main" ]
-
+        - "vpc/"
 
 
 jobs:
