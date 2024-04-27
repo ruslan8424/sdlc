@@ -15,15 +15,18 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Initialize terraform
+        working-directoru: vpc
         run: |
           terraform init
 
 
       - name: Configur workspace
+        working-directoru: vpc
         run: |
             terraform workspace new dev || terraform workspace select dev
 
   
       - name: Plan
+        working-directoru: vpc
         run: |
                 terraform plan          
