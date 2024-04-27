@@ -23,7 +23,7 @@ jobs:
       - name: Configur workspace
         working-directory: rds
         run: |
-            terraform workspace new dev || terraform workspace select dev
+                terraform workspace new dev || terraform workspace select dev
 
   
       - name: Plan
